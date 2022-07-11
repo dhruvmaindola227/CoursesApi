@@ -1,4 +1,6 @@
 # CoursesApi
+## A simple REST API which returns a JSON of topics , made using Springboot.
+### All 4 HTTP methods (GET , POST , PUT , DELETE) are working.
 
 ### GET REQUEST
 ![image](https://github.com/dhruvmaindola227/CoursesApi/blob/master/images/1.png)
