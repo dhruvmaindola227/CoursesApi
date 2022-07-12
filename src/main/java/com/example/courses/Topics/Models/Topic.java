@@ -1,8 +1,19 @@
-package com.example.courses.Models;
+package com.example.courses.Topics.Models;
 
+import org.springframework.lang.NonNull;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tables")
 public class Topic {
+    @Id
     private String id;
+    @NonNull
     private String name;
+    @NonNull
     private String description;
 
     public Topic(){}
@@ -21,6 +32,7 @@ public class Topic {
         this.id = id;
     }
 
+
     public String getName() {
         return name;
     }
@@ -28,6 +40,7 @@ public class Topic {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getDescription() {
         return description;
